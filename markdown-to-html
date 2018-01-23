@@ -21,7 +21,7 @@ styles="/*! normalize.css v2.1.3 | MIT License | git.io/normalize */.go-top,a{te
 pandoc -f markdown -t html $1 -o convertedmarkdown.html
 
 # append the styles to the end of the html file
-echo "<style>${styles}/style>" >> convertedmarkdown.html
+echo "<style>${styles}</style>" >> convertedmarkdown.html
 
 # open the html file in the default browser
 open convertedmarkdown.html
