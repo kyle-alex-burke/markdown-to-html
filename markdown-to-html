@@ -1,5 +1,8 @@
-# usage: ./script.sh input.md
+#!/bin/bash
+
+# usage: markdown-to-html input.md
 # takes a markdown file and outputs (and automatically opens) an html file with some nice styling.
+# for maximum convenience, drop this into your /usr/local/bin directory.
 
 if [ -z "$(which pandoc)" ]
 then
